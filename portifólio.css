@@ -170,12 +170,8 @@ nav ul li a:hover{
 }
 #deseper{
     display: none;
-    background-color: rgba(0, 0, 0, 0.137);
-    background-attachment: fixed;  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-origin: center;
-    background-position:center ;
+    background-color: rgba(0, 0, 0, 0.356);
+   
     opacity : 10 ;
    font-size: 10px;
     color: white;
@@ -209,7 +205,7 @@ nav ul li a:hover{
     
 }
 #deseper h2{
-    font-size: 20px;
+    font-size: 1rem;
 }
 #deseper h3{
     margin-top: 100px;
@@ -239,7 +235,7 @@ nav ul li a:hover{
 @keyframes progress-animation{
     0% { width: 0%; }
     
-    100% { width: 60%}
+    100% { width: 80%}
     
 }
 
@@ -260,7 +256,7 @@ nav ul li a:hover{
  @keyframes progress-animation2{
      0% { width: 0%; }
      
-     100% { width: 30%}
+     100% { width: 50%}
      
  }
  #progress3 .progress-bar3{
@@ -280,11 +276,62 @@ nav ul li a:hover{
  @keyframes progress-animation3{
      0% { width: 0%; }
      
-     100% { width: 40%}
+     100% { width: 60%}
      
  }
+.proximo{
+    width: 2rem;
+    height: auto;
+    position: absolute;
+    right: 2rem;
+    bottom: 4rem;
+}
+#projetos{
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 100%;
+    height: 100vh; 
+    display: none;
+    text-align: center;
+}
+#projetos h1{
+    padding-top: 100px;
+    font-size: 18px;
+}
+.linguagem{
+    width: 100px;
+    height: auto;
+    margin-top: 100px;
+    justify-content: space-around;
+}
 
+.digitando{
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    animation: digitando  3s steps(80) 1s normal both;
+}
+@keyframes digitando {
+    from{ 
+       width: 0;
+        text-align: center;  }  
+    to{
+        width: 100%;
+        text-align: center;
+      
+      
+    }
+    
+}
+.voltar{
+    width: 2rem;
+    height: auto;
+    position: absolute;
+   left: 2rem;
+    top: 160vh;
+    transform: rotate(180deg);
 
+}
 
 
 
