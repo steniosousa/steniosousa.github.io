@@ -1,0 +1,346 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.808);
+    font-family: 'Azeret Mono', monospace; 
+    color: white;
+    overflow-x: hidden;
+    font-size: 10px;
+  
+}
+::-webkit-scrollbar {
+width: 0px;
+}
+nav{
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.253);
+    border-radius: 0px 0px 50px 50px;
+    margin-left: 15%;
+    font-size: 1rem;
+}
+nav ul li a{
+   font-weight: bold;
+   margin-left:10px;
+   
+}
+nav ul li a:hover{
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+    cursor: pointer;
+    color: indigo;
+}
+::marker{
+    color: transparent;
+}
+#aviao{
+    display: none;
+}
+
+#start{
+    display: flex;
+    width: 70vw;
+    height: 85vh;
+    margin-left: 15rem;
+}
+.meet{
+    margin-top:10rem;
+    font-size: 1rem;
+
+ 
+}
+.meet p{
+    font-size: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    padding-top: 0;
+    margin-top: 0;
+
+}
+.meet h2{
+    font-size: 3rem;
+    padding-top: 2px;
+    margin-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+.meet img{
+    width: 20px;
+    height: 20px;
+}
+
+.meet-inst{
+    font-size: 1rem;
+    border: 1px solid indigo;
+    border-radius: 3px;
+    background: indigo;
+    padding:8px 20px ;
+    display:inline-block;
+    
+}
+.meet a{
+    color: white;
+    text-decoration: none;
+}
+.svg-meet{
+    margin-left: 20em;
+    position: absolute;
+  
+}
+.svg-meet img{
+    margin-left: 20rem;
+    width: 35rem;
+    height: 35rem;
+ 
+}
+#txt-aviao{
+    display: none;}
+@media (max-width: 1223px){
+    #imgg{
+        width: 400px;
+        height: auto;
+        margin-top: 9em;
+    }
+
+}
+   
+@media (max-width: 1164px){
+    .svg-meet{
+       display: none;
+    }
+    nav{
+        width: 100%;
+        height: 10vh;
+        background: rgba(0, 0, 0, 0.253);
+        display: inline-block;
+        text-align: center;
+        font-size: 1rem;
+        margin: 0;
+    }
+    .meet{
+        padding: 0;
+        width: 100%;
+        
+        text-align: center;
+     
+    }
+    #start{
+       margin: 0;
+       width: 100%;
+    }
+    ul li a{
+        display: none;
+        
+    }
+    #aviao{
+        display: block;
+        position: absolute;
+		animation: voa 10s normal .0s infinite ;
+        bottom: 50px;
+        width: 50px;
+        height: auto;
+    }
+    @keyframes voa {
+
+        0% { left: 0px;	}
+			100% { left: 100%; }
+    }
+    #txt-aviao{
+        display: inline;
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        overflow:hidden;
+        white-space:nowrap;
+        animation: typing 5s steps(30) 0s normal;
+        width: 100%;
+    }
+
+    @keyframes typing {
+        from{
+            width: 0;      
+        }
+        to{
+            width: 10;
+        }
+    }
+}
+#deseper{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.356);
+   
+    opacity : 10 ;
+   font-size: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    font-family: 'Azeret Mono', monospace; 
+
+}
+
+
+#revelar2{
+   text-align: center;
+    width: 100%;
+    height: 10vh;
+}
+#revelar2 h1{
+   
+    border:1px solid blueviolet;
+    padding: 15px 30px;
+    border-radius: 10%;
+    margin-top: 0px;
+   
+
+}
+#deseper h1{
+    padding-top: 100px;
+   font-size: 3em;
+   
+
+    
+}
+#deseper h2{
+    font-size: 1rem;
+}
+#deseper h3{
+    margin-top: 100px;
+    font-size: 2EM;
+}
+.progress{
+    margin-top: 50px;
+    height: 15px;
+    
+        white-space:nowrap;
+    position: relative;
+}
+
+.progress .progress-bar{
+   position: absolute;
+   height: 100%;
+   background-color: indigo;
+   animation: progress-animation 6s both;
+}
+.progress-bar p{
+    margin-top: 0;
+    font-size: 1rem;
+    background-color:indigo ;
+}
+
+
+@keyframes progress-animation{
+    0% { width: 0%; }
+    
+    100% { width: 80%}
+    
+}
+
+#progress2 .progress-bar2{
+    position: absolute;
+    height: 100%;
+    background-color: indigo;
+    animation: progress-animation2 6s both;
+    margin-top: 30px;
+ }
+ .progress-bar2 p{
+     margin-top: 0;
+     font-size: 1rem;
+     background-color:indigo ;
+ }
+ 
+ 
+ @keyframes progress-animation2{
+     0% { width: 0%; }
+     
+     100% { width: 50%}
+     
+ }
+ #progress3 .progress-bar3{
+    position: absolute;
+    height: 100%;
+    background-color: indigo;
+    animation: progress-animation3 6s both;
+    margin-top: 60px;
+ }
+ .progress-bar3 p{
+     margin-top: 0;
+     font-size: 1rem;
+     background-color:indigo ;
+ }
+ 
+ 
+ @keyframes progress-animation3{
+     0% { width: 0%; }
+     
+     100% { width: 60%}
+     
+ }
+.proximo{
+    width: 2rem;
+    height: auto;
+    position: absolute;
+    right: 2rem;
+    bottom: 4rem;
+}
+#projetos{
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 100%;
+    height: 100vh; 
+    display: none;
+    text-align: center;
+}
+#projetos h1{
+    padding-top: 100px;
+    font-size: 18px;
+}
+.linguagem{
+    width: 100px;
+    height: auto;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+.digitando{
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    animation: digitando  3s steps(80) 1s normal both;
+}
+@keyframes digitando {
+    from{ 
+       width: 0;
+        text-align: center;  }  
+    to{
+        width: 100%;
+        text-align: center;
+      
+      
+    }
+    
+}
+.voltar{
+    width: 2rem;
+    height: auto;
+    position: absolute;
+   left: 2rem;
+    top: 160vh;
+    transform: rotate(180deg);
+
+}
+
+
+
+
+
+
+
+
+
+
+ 
+ 
