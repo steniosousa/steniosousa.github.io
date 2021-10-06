@@ -1,4 +1,3 @@
-
 function lado(){
     var limonadadadada = document.getElementById("deseper").style.display = "none";
     var limonadad = document.getElementById("projetos").style.display = "inline-block";
