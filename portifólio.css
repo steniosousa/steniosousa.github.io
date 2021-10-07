@@ -363,11 +363,7 @@ nav ul li a:hover{
     height: 20rem;
     border-radius: 0px 50px;
 }
-.projetos1 img:hover{
-    width: 30rem;
-    height: 20rem;
-    border-radius: 0px 0px;
-}
+
 
 @media (max-width: 1220px){
     .projetos{
