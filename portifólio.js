@@ -1,12 +1,11 @@
 function lado(){
-    var limonadadadada = document.getElementById("deseper").style.display = "none";
-    var limonadad = document.getElementById("projetos").style.display = "inline-block";
+    var Clean = document.getElementById("deseper").style.display = "none";
+    var Show = document.getElementById("projetos").style.display = "inline-block";
 }
 function voltar(){
-    var limonadadadada = document.getElementById("deseper").style.display = "inline-block";
-    var limonadad = document.getElementById("projetos").style.display = "none";
+    var Clear = document.getElementById("deseper").style.display = "inline-block";
+    var show = document.getElementById("projetos").style.display = "none";
 }
-
 
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
